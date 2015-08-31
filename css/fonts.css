@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'MonAmourTwoMedium';
+    src: url('../fonts/MonAmourTwoMedium.eot');
+    src: url('../fonts/MonAmourTwoMedium.eot') format('embedded-opentype'),
+         url('../fonts/MonAmourTwoMedium.woff2') format('woff2'),
+         url('../fonts/MonAmourTwoMedium.woff') format('woff'),
+         url('../fonts/MonAmourTwoMedium.ttf') format('truetype'),
+         url('../fonts/MonAmourTwoMedium.svg#MonAmourTwoMedium') format('svg');
+}
+@font-face {
+    font-family: 'OfficinaSerifCTTRegular';
+    src: url('../fonts/OfficinaSerifCTTRegular.eot');
+    src: url('../fonts/OfficinaSerifCTTRegular.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifCTTRegular.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifCTTRegular.woff') format('woff'),
+         url('../fonts/OfficinaSerifCTTRegular.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifCTTRegular.svg#OfficinaSerifCTTRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'OfficinaSerifCTTBold';
+    src: url('../fonts/OfficinaSerifCTTBold.eot');
+    src: url('../fonts/OfficinaSerifCTTBold.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifCTTBold.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifCTTBold.woff') format('woff'),
+         url('../fonts/OfficinaSerifCTTBold.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifCTTBold.svg#OfficinaSerifCTTBold') format('svg');
+}
+@font-face {
+    font-family: 'OfficinaSerifCTTItalic';
+    src: url('../fonts/OfficinaSerifCTTItalic.eot');
+    src: url('../fonts/OfficinaSerifCTTItalic.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifCTTItalic.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifCTTItalic.woff') format('woff'),
+         url('../fonts/OfficinaSerifCTTItalic.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifCTTItalic.svg#OfficinaSerifCTTItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'OfficinaSerifCTT';
+    src: url('../fonts/OfficinaSerifCTT.eot');
+    src: url('../fonts/OfficinaSerifCTT.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifCTT.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifCTT.woff') format('woff'),
+         url('../fonts/OfficinaSerifCTT.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifCTT.svg#OfficinaSerifCTT') format('svg');
+}
+
+@font-face {
+    font-family: 'GothaProBol';
+    src: url('../fonts/GothaProBol.eot');
+    src: url('../fonts/GothaProBol.eot') format('embedded-opentype'),
+         url('../fonts/GothaProBol.woff2') format('woff2'),
+         url('../fonts/GothaProBol.woff') format('woff'),
+         url('../fonts/GothaProBol.ttf') format('truetype'),
+         url('../fonts/GothaProBol.svg#GothaProBol') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamProRegular';
+    src: url('../fonts/GothamProRegular.eot');
+    src: url('../fonts/GothamProRegular.eot') format('embedded-opentype'),
+         url('../fonts/GothamProRegular.woff2') format('woff2'),
+         url('../fonts/GothamProRegular.woff') format('woff'),
+         url('../fonts/GothamProRegular.ttf') format('truetype'),
+         url('../fonts/GothamProRegular.svg#GothamProRegular') format('svg');
+}

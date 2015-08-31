@@ -1,0 +1,172 @@
+@media(min-width: 1381px){
+	.navbar-pos{
+		position: absolute;
+		left: 50%;
+		margin-left: -316.5px;
+		z-index: 2;
+	}
+}
+
+@media(max-width: 1380px){
+	.navbar-brand img{
+		width: 20vw;
+	}
+	.nav,
+	.dropdown-menu{
+		font-size: 16px;
+	}
+	.navbar-right{
+		font-size: 14px;
+	}
+	.nav .icon img{
+		width: 3.2vw;
+		height: 2.5vw;
+	}
+	.main-container{
+		width: 90%;
+	}
+	.about-text{
+		margin-bottom: 30px;
+	}
+	.about-menu{
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+	.visible-menu .text-event{
+		font-size: 28px;
+	}
+}
+
+@media(max-width: 1130px){
+	.nav > li > a{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.header-title img{
+		width: 85%;
+	}
+	.header .title{
+		font-size: 38px;
+	}
+	.h2{
+		font-size: 38px;
+	}
+	.h1{
+		font-size: 44px;
+	}
+	.banc-block .title{
+		font-size: 18px;
+	}
+	.video-wrapper p{
+		font-size: 24px;
+	}
+	.visible-event .text-event{
+		font-size: 16px;
+	}
+	.text-cell .h2{
+		margin-top: 0;
+	}
+	.about-rest .small-title{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 1199px){
+	.reserv-block{
+		display: block;
+		width: 305px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.reser-icon{
+		width: 35px;
+	}
+	.reserv-block .input{
+		width: 240px;
+	}
+}
+
+@media(max-width: 991px){
+	.navbar-default .navbar-nav > li.active > a:after{
+		content: none;
+	}
+	.navbar-brand img{
+		width: auto;
+	}
+	.navbar-right li{
+		display: inline-block;
+	}
+	.nav .icon img{
+		width: auto;
+		height: auto;
+	}
+	.nav,
+	.dropdown-menu{
+		font-size: 18px;
+	}
+	.navbar-right{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 767px){
+	.main-container{
+		width: 100%;
+	}
+	.about-rest .about-img{
+		width: auto;
+		max-width: 100%;
+	}
+	.about-rest .col-sm-4{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.about-rest{
+		padding-top: 65px;
+	}
+	.events-wrapper{
+		padding-left: 15px;
+		padding-right: 5px;
+	}
+		.events-wrapper .col-sm-4{
+			float: none;
+			width: 350px;
+			margin:auto;
+			margin-bottom: 20px;
+		}
+	.about-menu .col-lg-3{
+		float: none;
+		margin: auto;
+		width: 350px;
+		margin-bottom: 20px;
+	}
+	.subscribe-form fieldset{
+		width: 90%;
+	}
+	.subscribe img{
+		max-width: 100%;
+		height: auto;
+	}
+	.subscribe .title{
+		font-size: 20px;
+	}
+	.foot-list{
+		font-size: 20px;
+	}
+	.banc-text{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media(max-width: 480px){
+	.navbar-brand img{
+		width: 65vw;
+	}
+	.about-menu .col-lg-3,
+	.events-wrapper .col-sm-4{
+		width: 100%;
+	}
+
+}
