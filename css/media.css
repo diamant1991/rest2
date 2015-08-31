@@ -125,6 +125,9 @@
 	.banc-block:last-child{
 		margin-bottom: 30px;
 	}
+	#navigator{
+		display: none;
+	}
 }
 
 @media(max-width: 767px){

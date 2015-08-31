@@ -741,10 +741,13 @@
   vertical-align: middle;
 }
 #navigator {
-  position: fixed;
-  top: 50%;
-  right: 48px;
-  z-index: 999;
+  position: fixed !important;
+  top: 50% !important;
+  right: 48px !important;
+  left: auto !important;
+  z-index: 999 !important;
+  width: 50px !important;
+  height: 90px !important;
 }
 #navigator a {
   display: block;
@@ -767,4 +770,16 @@
   border-color: transparent;
   border-color: rgba(255, 255, 255, 0.01);
   cursor: default;
+}
+#navigator.navigator-black .bullet {
+  border-color: black;
+}
+#navigator.navigator-black .nav-item.active .bullet {
+  background: black;
+}
+.midnightHeader.black .bullet {
+  border-color: black !important;
+}
+.midnightHeader.black .nav-item.active .bullet {
+  background: black !important;
 }

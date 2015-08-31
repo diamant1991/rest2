@@ -90,7 +90,7 @@
 </div>
 
 
-<header class="container-fluid header" data-type="background" data-speed="10" data-section="one">
+<header class="container-fluid header section" data-type="background" data-speed="10" data-section="one">
 	<div class="row">
 		<div class="header-title">
 			<div class="header-cell">
@@ -105,7 +105,7 @@
 	</div>
 </header>
 
-<section class="container-fluid about-rest" id="about-rest">
+<section class="container-fluid about-rest" id="about-rest" data-midnight="black">
 	<a href="#about-rest" class="button-arrow"></a>
 	<div class="row">
 		<div class="main-container clearfix">
@@ -141,7 +141,7 @@
 	</div>
 </section><!-- about rest -->
 
-<section class="container-fluid events" data-section="two">
+<section class="container-fluid events section" data-section="two" data-midnight="black">
 	<div class="row">
 		<div class="main-container clearfix">
 			<header>
@@ -275,7 +275,7 @@
 	</div>
 </section>
 
-<section class="container-fluid about-menu">
+<section class="container-fluid about-menu" data-midnight="black">
 	<div class="row">
 		<div class="main-container clearfix">
 			<div class="col-lg-3 col-sm-12 about-text">
@@ -344,7 +344,7 @@
 </section><!-- about menu -->
 
 
-<section class="container-fluid video-wrapper" data-section="three">
+<section class="container-fluid video-wrapper section" data-section="three">
 	<header>
 		<h1 class="h1">Видео</h1>
 		<p>О нас</p>
@@ -403,6 +403,12 @@
       $(".fancybox").fancybox();
     });
   </script>
+<script src="js/midnight.jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+    $('#navigator').midnight();
+  });
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

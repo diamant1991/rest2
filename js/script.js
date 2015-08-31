@@ -78,7 +78,7 @@ $(window).scroll(function(){
 function showSection(section, isAnimate){
    var 
       direction = section.replace(/#/, ''),
-      reqSection = $('.container-fluid').filter('[data-section = "' + direction + '"]'),
+      reqSection = $('.section').filter('[data-section = "' + direction + '"]'),
       reqSectionPos = reqSection.offset().top - 50;
 
    if(isAnimate){
@@ -90,7 +90,7 @@ function showSection(section, isAnimate){
 }
 
 function checkSection(){
-  $('.container-fluid').each(function(){
+  $('.section').each(function(){
     var 
        
         $this = $(this),
@@ -111,4 +111,6 @@ function checkSection(){
    }
   })
 }
+
+
 
