@@ -13,6 +13,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -34,8 +35,8 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">О Нас<span class="sr-only">(current)</span></a></li>
+      <ul class="nav navbar-nav navbar-pos">
+        <li class="active"><a href="#">О Нас</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Рестораны<span class="drop-arrow"></span></a>
           <ul class="dropdown-menu">
@@ -71,7 +72,23 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<header class="container-fluid header header-banquets" data-type="background" data-speed="10">
+<div id="navigator">
+	<ul>
+		<li class="nav-item active">
+			<a href="#one" class="nav-item-link">
+				<span class="bullet"></span>
+			</a>
+		</li>
+		<li class="nav-item"><a href="#two" class="nav-item-link">
+			<span class="bullet"></span>
+		</a></li>
+		<li class="nav-item"><a href="#three" class="nav-item-link">
+			<span class="bullet"></span>
+		</a></li>
+	</ul>
+</div>
+
+<header class="container-fluid header header-banquets" data-type="background" data-speed="10" data-section="one">
 	<div class="row">
 		<div class="header-title">
 			<div class="header-cell">
@@ -87,7 +104,7 @@
 	</div>
 </header>
 
-<section class="container-fluid about-rest" id="about-rest">
+<section class="container-fluid about-rest" id="about-rest" data-section="two">
 	<a href="#about-rest" class="button-arrow"></a>
 	<div class="row">
 		<div class="main-container">
@@ -131,55 +148,105 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="reserv">
-				<header>резервация банкетного зала</header>
-				<div class="reserv-container">
-					<div class="reserv-block clearfix">
-						<span class="reser-icon">
-							<img src="images/calendar.png" height="32" width="30" alt="">
-						</span>
-						<input type="text" class="input">
-					</div>
-					<div class="reserv-block clearfix">
-						<span class="reser-icon">
-							<img src="images/clock.png" height="32" width="32" alt="">
-						</span>
-						<div class="select">
-							<a href="javascript:void(0);" class="slct">7:00</a>
-							<ul class="drop">
-								<li>1:00</li>
-								<li>2:00</li>
-								<li>3:00</li>
-								<li>4:00</li>
-							</ul>
-							<input type="hidden" id="select">
-						</div>
-					</div>
-					<div class="reserv-block clearfix">
-						<span class="reser-icon">
-							<img src="images/person.png" height="32" width="22" alt="">
-						</span>
-						<div class="select">
-							<a href="javascript:void(0);" class="slct">30 персон</a>
-							<ul class="drop">
-								<li>15 персон</li>
-								<li>5 персон</li>
-								<li>10 персон</li>
-								<li>20 персон</li>
-							</ul>
-							<input type="hidden" id="select">
-						</div>
-					</div>
-
-					<form >
-						<input type="submit" value="заказать" class="send">
-					</form>
-				</div>
-			</div>
 		</div>
 	</div>
 </section><!-- about rest -->
+
+<section class="container-fluid gallery" data-section="three">
+	<div class="main-container">
+		<h2 class="h2">Галлерея</h2>
+		<div class="gallery-wrapper clearfix">
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a> 
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+				
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				
+					<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+				
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="images/gal.jpg" class="fancybox"><img src="images/gal.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="reserv reserv-table">
+	<header>резервация столика</header>
+	<div class="reserv-container">
+		<div class="reserv-block clearfix">
+			<span class="reser-icon">
+				<img src="images/calendar.png" height="32" width="30" alt="">
+			</span>
+			<input type="text" class="input">
+		</div>
+		<div class="reserv-block clearfix">
+			<span class="reser-icon">
+				<img src="images/clock.png" height="32" width="32" alt="">
+			</span>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct">7:00</a>
+				<ul class="drop" style="">
+					<li>1:00</li>
+					<li>2:00</li>
+					<li>3:00</li>
+					<li>4:00</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="reserv-block clearfix">
+			<span class="reser-icon">
+				<img src="images/person.png" height="32" width="22" alt="">
+			</span>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct">30 персон</a>
+				<ul class="drop" style="">
+					<li>15 персон</li>
+					<li>5 персон</li>
+					<li>10 персон</li>
+					<li>20 персон</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+
+		<form>
+			<input type="submit" value="заказать" class="send">
+		</form>
+	</div>
+</div>
+
+
 
 <section class="container-fluid subscribe">
 	<div class="sub-block">
@@ -225,6 +292,20 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+   $(".fancybox").fancybox({
+     padding : 0,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+
+ });
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

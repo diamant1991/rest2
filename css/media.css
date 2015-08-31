@@ -37,6 +37,24 @@
 	}
 }
 
+@media(max-width: 1199px){
+	.reserv-block{
+		display: block;
+		width: 305px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.reser-icon{
+		width: 35px;
+	}
+	.reserv-block .input{
+		width: 240px;
+	}
+	.event-table{
+		height: 250px;
+	}
+}
+
 @media(max-width: 1130px){
 	.nav > li > a{
 		padding-left: 5px;
@@ -71,20 +89,7 @@
 	}
 }
 
-@media(max-width: 1199px){
-	.reserv-block{
-		display: block;
-		width: 305px;
-		margin: auto;
-		margin-bottom: 20px;
-	}
-	.reser-icon{
-		width: 35px;
-	}
-	.reserv-block .input{
-		width: 240px;
-	}
-}
+
 
 @media(max-width: 991px){
 	.navbar-default .navbar-nav > li.active > a:after{
@@ -106,6 +111,19 @@
 	}
 	.navbar-right{
 		font-size: 16px;
+	}
+	.event-table{
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.maps{
+		margin-top: 50px;
+	}
+	.reserv header{
+		font-size: 24px;
+	}
+	.banc-block:last-child{
+		margin-bottom: 30px;
 	}
 }
 
@@ -157,7 +175,27 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.button-arrow{
+		height: 140px;
+	}
+	.menu-new{
+		margin-top: 40px;
+	}
+	.about-zal .col-sm-6{
+		margin-bottom: 20px;
+	}
 
+}
+
+@media(max-width: 600px){
+	.menu-block .name,
+	.menu-block .price{
+		font-size: 16px;
+	}
+	.menu-list .col-md-6{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media(max-width: 480px){
@@ -167,6 +205,17 @@
 	.about-menu .col-lg-3,
 	.events-wrapper .col-sm-4{
 		width: 100%;
+	}
+	.reserv-block .input,
+	.slct,
+	.drop{
+		width: 190px;
+	}
+	.reserv-block{
+		width: 255px;
+	}
+	.reserv-container .send{
+		width: 240px;
 	}
 
 }

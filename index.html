@@ -73,8 +73,24 @@
 </nav>
 
 
+<div id="navigator">
+	<ul>
+		<li class="nav-item active">
+			<a href="#one" class="nav-item-link">
+				<span class="bullet"></span>
+			</a>
+		</li>
+		<li class="nav-item"><a href="#two" class="nav-item-link">
+			<span class="bullet"></span>
+		</a></li>
+		<li class="nav-item"><a href="#three" class="nav-item-link">
+			<span class="bullet"></span>
+		</a></li>
+	</ul>
+</div>
 
-<header class="container-fluid header" data-type="background" data-speed="10">
+
+<header class="container-fluid header" data-type="background" data-speed="10" data-section="one">
 	<div class="row">
 		<div class="header-title">
 			<div class="header-cell">
@@ -125,7 +141,7 @@
 	</div>
 </section><!-- about rest -->
 
-<section class="container-fluid events">
+<section class="container-fluid events" data-section="two">
 	<div class="row">
 		<div class="main-container clearfix">
 			<header>
@@ -136,51 +152,54 @@
 				<div class="col-sm-4">
 					<div class="row">
 						<div class="events-block">
-							<img src="images/events-1.jpg" height="579" width="579" alt="">
-							<div class="visible-event">
-								<div class="text-table">
-									<div class="text-cell">
-										<h2 class="h2">New</h2>
-										<div class="text-event">
-											В ресторанах Zafferano <br> появилось летнее сладкое <br> предложение
+							<a href="#"><img src="images/events-1.jpg" height="579" width="579" alt="">
+								<div class="visible-event">
+									<div class="text-table">
+										<div class="text-cell">
+											<h2 class="h2">New</h2>
+											<div class="text-event">
+												В ресторанах Zafferano <br> появилось летнее сладкое <br> предложение
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="row">
 						<div class="events-block">
-							<img src="images/events-13.jpg" height="579" width="579" alt="">
-							<div class="visible-event">
-								<div class="text-table">
-									<div class="text-cell">
-										<h2 class="h2">New</h2>
-										<div class="text-event">
-											В ресторанах Zafferano <br> появилось летнее сладкое <br> предложение
+							<a href="#"><img src="images/events-13.jpg" height="579" width="579" alt="">
+								<div class="visible-event">
+									<div class="text-table">
+										<div class="text-cell">
+											<h2 class="h2">New</h2>
+											<div class="text-event">
+												В ресторанах Zafferano <br> появилось летнее сладкое <br> предложение
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="row">
 						<div class="events-block">
-							<img src="images/events-1.jpg" height="579" width="579" alt="">
-							<div class="visible-event">
-								<div class="text-table">
-									<div class="text-cell">
-										<h2 class="h2">New</h2>
-										<div class="text-event">
-											В ресторанах Zafferano <br> появилось летнее сладкое <br> предложение
+							<a href="#"><img src="images/events-1.jpg" height="579" width="579" alt="">
+								<div class="visible-event">
+									<div class="text-table">
+										<div class="text-cell">
+											<h2 class="h2">New</h2>
+											<div class="text-event">
+												В ресторанах Zafferano <br> появилось летнее сладкое <br> предложение
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -193,7 +212,7 @@
 	<div class="row">
 		<div class="main-container">
 			<h2 class="h2">Рестораны</h2>
-			<div class="rest-list clearfix">
+			<!-- <div class="rest-list clearfix">
 				<div class="col-sm-4">
 					<div class="row">
 						<a href="#">Lotte Plaza</a>
@@ -209,10 +228,29 @@
 						<a href="#" class="active">ТРК VEGAS (Каширское шоссе)</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<div class="main-container">
+					<div class="rest-list clearfix">
+						<div class="col-sm-4">
+							<div class="row">
+								<a href="#" class="active" data-slide-to="0">Lotte Plaza</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="row">
+								<a href="#" data-slide-to="1">ТРК VEGAS (Крокус Стии)</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="row">
+								<a href="#" data-slide-to="2">ТРК VEGAS (Каширское шоссе)</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -272,7 +310,7 @@
 			<div class="col-lg-3 col-sm-4">
 				<a href="#">
 					<div class="menu-hidden">
-						<img src="images/about-2.jpg" height="496" width="379" alt="">
+						<img src="images/about-2.jpg" height="496" width="379" alt="" class="about-img">
 						<div class="visible-menu">
 							<div class="text-table">
 								<div class="text-cell">
@@ -288,7 +326,7 @@
 			<div class="col-lg-3 col-sm-4">
 				<a href="#">
 					<div class="menu-hidden">
-						<img src="images/about-3.jpg" height="496" width="379" alt="">
+						<img src="images/about-3.jpg" height="496" width="379" alt="" class="about-img">
 						<div class="visible-menu">
 							<div class="text-table">
 								<div class="text-cell">
@@ -306,12 +344,11 @@
 </section><!-- about menu -->
 
 
-<section class="container-fluid video-wrapper">
+<section class="container-fluid video-wrapper" data-section="three">
 	<header>
 		<h1 class="h1">Видео</h1>
 		<p>О нас</p>
 	</header>
-	<span class="play"><img src="images/play.png" height="115" width="115" alt=""></span>
 </section><!-- video -->
 
 <section class="container-fluid subscribe">
@@ -358,7 +395,8 @@
 
 
 <script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/bootstrap.js"></script>
  <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script type="text/javascript">
     $(document).ready(function() {
