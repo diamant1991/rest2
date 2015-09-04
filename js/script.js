@@ -106,7 +106,6 @@ function checkSection(){
       reqLink.closest('.nav-item').addClass('active')
               .siblings().removeClass('active');
      
-     window.location.hash = currentId;
 
    }
   })

@@ -94,12 +94,14 @@
 	<div class="row">
 		<div class="header-title">
 			<div class="header-cell">
-				<a class="logo-header">
-					<img src="images/logo-header.png" height="107" width="925" alt="">
-				</a>
-				<p class="title">
-					Традиции Бакинской Кухни
-				</p>
+				<div class="header-overlay">
+					<a class="logo-header">
+						<img src="images/logo-header.png" height="107" width="925" alt="">
+					</a>
+					<p class="title">
+						Традиции Бакинской Кухни
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -236,17 +238,17 @@
 					<div class="rest-list clearfix">
 						<div class="col-sm-4">
 							<div class="row">
-								<a href="#" class="active" data-slide-to="0">Lotte Plaza</a>
+								<a class="active" data-target="#carousel-example-generic" data-slide-to="0">Lotte Plaza</a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="row">
-								<a href="#" data-slide-to="1">ТРК VEGAS (Крокус Стии)</a>
+								<a data-target="#carousel-example-generic" data-slide-to="1">ТРК VEGAS (Крокус Стии)</a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="row">
-								<a href="#" data-slide-to="2">ТРК VEGAS (Каширское шоссе)</a>
+								<a data-target="#carousel-example-generic" data-slide-to="2">ТРК VEGAS (Каширское шоссе)</a>
 							</div>
 						</div>
 					</div>
@@ -343,13 +345,19 @@
 	</div>
 </section><!-- about menu -->
 
+<div class="container-fluid video2 section" data-section="three">
+	<div class="row">
+		<div class="overlay-video">
+			<h1 class="h1">Видео</h1>
+			<p>О нас</p>
+		</div>
+		<button onclick="playPause()" class="btn-video"><img src="images/play.png" height="115" width="115" alt=""></button> 
+		<video id="video1">
+	    <source src="Zafferano.mp4" type="video/mp4">
+	</video>
+	</div>
+</div>
 
-<section class="container-fluid video-wrapper section" data-section="three">
-	<header>
-		<h1 class="h1">Видео</h1>
-		<p>О нас</p>
-	</header>
-</section><!-- video -->
 
 <section class="container-fluid subscribe">
 	<div class="sub-block">
@@ -410,5 +418,15 @@
   });
 </script>
 <script src="js/script.js"></script>
+<script>
+	var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+</script>
 </body>
 </html>
