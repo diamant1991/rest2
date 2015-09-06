@@ -37,12 +37,33 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-pos">
         <li class="active"><a href="#">О Нас</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Рестораны<span class="drop-arrow"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Пункт 1</a></li>
-            <li><a href="#">Пункт 2</a></li>
-            <li><a href="#">Пункт 3</a></li>
+        <li class="dropdown rest-link">
+          <a>Рестораны<span class="drop-arrow"></span></a>
+          <ul class="dropdown-menu res-menu">
+            <li>
+            	<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Пункт 1</a>
+            	<ul id="collapseOne" class="collapse child-res" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            		<li><a href="#">Основное меню</a></li>
+            		<li><a href="#">Винная карта</a></li>
+            		<li><a href="#">Барное меню</a></li>
+            	</ul>
+            </li>
+            <li>
+            	<a role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordion">Пункт 2</a>
+            	<ul id="collapseTwo" class="collapse child-res" role="tabpanel" aria-labelledby="headingOne">
+            		<li><a href="#">Основное меню</a></li>
+            		<li><a href="#">Винная карта</a></li>
+            		<li><a href="#">Барное меню</a></li>
+            	</ul>
+            </li>
+            <li>
+            	<a role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordion">Пункт 3</a>
+            	<ul id="collapseThree" class="collapse child-res" role="tabpanel" aria-labelledby="headingOne">
+            		<li><a href="#">Основное меню</a></li>
+            		<li><a href="#">Винная карта</a></li>
+            		<li><a href="#">Барное меню</a></li>
+            	</ul>
+            </li>
           </ul>
         </li>
          <li class="dropdown">

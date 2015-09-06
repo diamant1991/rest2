@@ -840,3 +840,12 @@
 .header-overlay {
   display: inline-block;
 }
+.child-res {
+  padding-left: 25px;
+}
+.child-res a {
+  color: white;
+}
+.rest-link > a {
+  cursor: pointer;
+}

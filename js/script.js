@@ -48,8 +48,29 @@ $(document).mouseup(function (e) {
 });
 
 
-
 $(document).ready(function(){
+   $('.rest-link > a').click(function(event) {
+      var menu = $(this).parent().find('.res-menu');
+      if(menu.css('display') != 'none'){
+         menu.hide();
+      }
+      else{
+         menu.show();
+      }
+   });
+
+
+$(document).mouseup(function (e) {
+    var container = $(".res-menu");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+
+});
+
+
+
+
     $('header[data-type="background"]').each(function(){
         var $bgobj = $(this); 
         $(window).scroll(function() {
