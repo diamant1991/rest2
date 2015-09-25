@@ -374,7 +374,7 @@
 			<p>О нас</p>
 		</div>
 		<button onclick="playPause()" class="btn-video"><img src="images/play.png" height="115" width="115" alt=""></button> 
-		<video id="video1">
+		<video id="video1" onclick="Pause()">
 	    <source src="Zafferano.mp4" type="video/mp4">
 	</video>
 	</div>
@@ -442,13 +442,25 @@
 <script src="js/script.js"></script>
 <script>
 	var myVideo = document.getElementById("video1"); 
+	var overlay = document.getElementsByClassName('overlay-video');
+	var btn = document.getElementsByClassName('btn-video');
 
 function playPause() { 
-    if (myVideo.paused) 
-        myVideo.play(); 
+    if (myVideo.paused){
+	    	myVideo.play();
+	      overlay[0].style.display = 'none';
+	      btn[0].style.display = 'none'; 
+    } 
+         
     else 
         myVideo.pause(); 
+}
+function Pause(){
+	myVideo.pause();
+	overlay[0].style.display = 'block';
+	btn[0].style.display = 'block'; 
 } 
 </script>
+<script src="js/validation.js"></script>
 </body>
 </html>
