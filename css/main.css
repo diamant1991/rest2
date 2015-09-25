@@ -619,7 +619,7 @@
   position: relative;
   bottom: -0.2em;
   top: 7px;
-  padding-right: 3px;
+  padding-right: 100px;
   padding-left: 10px;
   color: black;
   font-size: 20px;
@@ -634,7 +634,7 @@
   right: 0;
   display: inline-block;
   background: white;
-  top: 10px;
+  bottom: -4px;
   padding-left: 3px;
   color: black;
   font-size: 20px;
@@ -657,6 +657,9 @@
   color: white;
   background: #c59d5f;
   padding: 0 5px;
+}
+.menu-new .price {
+  bottom: 4px;
 }
 .menu-img {
   margin-top: 10px;
@@ -848,4 +851,10 @@
 }
 .rest-link > a {
   cursor: pointer;
+}
+.menu-list .col-md-6:nth-child(2n+1) {
+  clear: both;
+}
+.event-item {
+  margin-bottom: 40px;
 }

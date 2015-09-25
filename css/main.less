@@ -702,7 +702,7 @@
 		   position: relative;
 		   bottom: -.2em;
 		   top: 7px;
-		   padding-right: 3px;
+		   padding-right: 100px;
 		   padding-left: 10px;
 		   color: #000;
 		   font-size: 20px;
@@ -717,7 +717,7 @@
 		   right: 0;
 		  	display:inline-block;
 		   background: #fff;
-		   top: 10px;
+		   bottom: -4px;
 		   padding-left: 3px;
 		   color: #000;
 		   font-size: 20px;
@@ -741,6 +741,9 @@
 			color: #fff;
 			background: @title;
 			padding: 0 5px;
+		}
+		.price{
+			bottom: 4px;
 		}
 }
 .menu-img{
@@ -953,4 +956,10 @@
 }
 .rest-link > a{
 	cursor: pointer;
+}
+.menu-list .col-md-6:nth-child(2n+1) {
+    clear: both;
+}
+.event-item{
+	margin-bottom: 40px;
 }
