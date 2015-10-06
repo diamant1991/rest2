@@ -391,7 +391,14 @@
 				</ul>
 				<input type="hidden" id="select">
 			</div>
+		</div><br>
+		<div class="reserv-block clearfix">
+			<input type="text" name="your_name" placeholder="Имя" class="input">
 		</div>
+		<div class="reserv-block clearfix">
+			<input type="text" name="your_phone" class="input input-tel" placeholder="Телефон">
+		</div>
+
 			<input type="submit" value="заказать" class="send">
 		</form>
 	</div>
@@ -441,6 +448,12 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script>
+	jQuery(function($){
+     $(".input-tel").mask("+7 (999) 999-9999");
+});
+</script>
 <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script type="text/javascript">
     $(document).ready(function() {
