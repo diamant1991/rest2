@@ -448,11 +448,12 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/maskedinput.js"></script>
+<script src="js/jquery.inputmask.bundle.js"></script>
 <script>
-	jQuery(function($){
-     $(".input-tel").mask("+7 (999) 999-9999");
-});
+	$(document).ready(function() {
+		$(".input-tel").inputmask("+7 (999) 999-9999");
+	});
+	
 </script>
 <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script type="text/javascript">
